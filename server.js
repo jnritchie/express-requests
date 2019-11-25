@@ -37,6 +37,8 @@ app.post('/', function (req, res) {
 	});
 });
 
-app.listen(3000, function () {
+const port = process.env.PORT || 3000
+
+const server = http.listen(port, function () {
   console.log('Weather app listening on port 3000!');
 });
